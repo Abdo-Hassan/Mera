@@ -28,7 +28,9 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Mera</a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <img src="img/logo.png" alt="logo">
+      </a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
         aria-label="Toggle navigation">
@@ -38,21 +40,22 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#download">تحميل</a>
+            <a class="nav-link js-scroll-trigger" href="#home">الرئيسية</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#features">المميزات</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">تواصل معنا</a>
+            <a class="nav-link js-scroll-trigger" href="#download">تحميل</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <header class="masthead">
+  <header class="masthead" id="home">
     <div class="container h-100">
+      <div class="overlay"></div>
       <div class="row h-100">
         <div class="col-lg-7 col-md-7 col-xs-12 my-auto">
           <div class="header-content mx-auto">
@@ -63,7 +66,7 @@
             <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">ابدأ التحميل الان</a>
           </div>
         </div>
-        <div class="col-lg-5 col-md-5 col-xs-12 my-auto">
+        <!-- <div class="col-lg-5 col-md-5 col-xs-12 my-auto">
           <div class="device-container">
             <div class="device-mockup iphone6_plus portrait white">
               <div class="device">
@@ -75,34 +78,11 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
-  </header>
 
-  <section class="download  text-center" id="download">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 mx-auto">
-          <h2 class="section-heading">
-            بتدور على شغل ؟ بتدور على عملاء ؟
-          </h2>
-          <p>
-            تطبيق ميرا متاح على جميع الهواتف , حمله وابدأ الان !
-          </p>
-          <div class="badges">
-            <a class="badge-link" target="_blank"
-              href="https://play.google.com/store/apps/details?id=app.mera.service&hl=ar&fbclid=IwAR3-9Qn7y1ZdhzAL3cvC9M0SrzSeA-pvoqj23Bs2wIRfdaYOpDVrf9Fdi5k"><img
-                src="img/google-play-badge.svg" alt="google" />
-            </a>
-            <a class="badge-link" target="_blank" href="https://apps.apple.com/bm/app/mera-services/id1466792407">
-              <img src="img/app-store-badge.svg" alt="ios" />
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  </header>
 
   <section class="features" id="features">
     <div class="container">
@@ -190,24 +170,20 @@
     </div>
   </section>
 
-  <section class="contact bg-primary" id="contact">
-    <div class="container">
-      <h2>
-        تواصل معنا
-      </h2>
-      <ul class="list-inline list-social">
-        <li class="list-inline-item social-twitter">
-          <a href="#">
-            <i class="fab fa-twitter"></i>
-          </a>
-        </li>
-        <li class="list-inline-item social-facebook">
-          <a href="https://www.facebook.com/meraservicesapp" target="_blank">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-        </li>
-      </ul>
+  <section class="cta" id="download">
+    <div class="cta-content">
+      <div class="container">
+        <h2>بتدور على شغل ؟ <br>بتدور على عمالة ؟ </h2>
+        <div class="badges">
+          <a class="badge-link" target="_blank"
+            href="https://play.google.com/store/apps/details?id=app.mera.service&hl=ar&fbclid=IwAR0mea16geASiOJv1OPe8NvtpW0npSOXf6ISCZfkc9FTaCfmi9T4pfV5mS0"><img
+              src="img/google-play-badge.svg" alt=""></a>
+          <a class="badge-link" target="_blank" href="https://apps.apple.com/bm/app/mera-services/id1466792407"><img
+              src="img/app-store-badge.svg" alt=""></a>
+        </div>
+      </div>
     </div>
+    <div class="overlay"></div>
   </section>
 
   <footer>

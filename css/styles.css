@@ -127,7 +127,7 @@ section h2 {
   }
   #mainNav .navbar-nav > li > a,
   #mainNav .navbar-nav > li > a:focus {
-    color: rgba(255, 255, 255, 0.7);
+    color: #fff;
   }
   #mainNav .navbar-nav > li > a:hover,
   #mainNav .navbar-nav > li > a:focus:hover {
@@ -161,12 +161,14 @@ header.masthead {
   padding: 100px 10px;
   color: #000;
   /* background-color: #639ec8; */
-  background: rgb(63, 107, 138);
+  /* background: rgb(63, 107, 138);
   background: linear-gradient(
     0deg,
     rgba(63, 107, 138, 1) 17%,
     rgba(99, 158, 200, 1) 75%
-  );
+  ); */
+  background: url('../img/homebg.jpeg') center center no-repeat;
+  background-size: cover;
 }
 
 header.masthead .header-content {
@@ -218,24 +220,24 @@ section.download {
 section.download h2 {
   font-size: 50px;
   margin-top: 0;
-  color: #000;
+  color: #fff;
 }
 
-section.download .badges .badge-link {
+section.cta .badges .badge-link {
   display: block;
   margin-bottom: 25px;
 }
 
-section.download .badges .badge-link:last-child {
+section.cta .badges .badge-link:last-child {
   margin-bottom: 0;
 }
 
-section.download .badges .badge-link img {
+section.cta .badges .badge-link img {
   height: 60px;
 }
 
 @media (min-width: 768px) {
-  section.download .badges .badge-link {
+  section.cta .badges .badge-link {
     display: inline-block;
     margin-bottom: 0;
   }
@@ -291,8 +293,8 @@ section.features .feature-item img {
 
 section.cta {
   position: relative;
-  padding: 250px 0;
-  background-image: url('../img/bg-cta.jpg');
+  padding: 200px 0;
+  background-image: url('../img/download.jpg');
   background-position: center;
   background-size: cover;
 }
@@ -312,11 +314,12 @@ section.cta .cta-content h2 {
 
 @media (min-width: 768px) {
   section.cta .cta-content h2 {
-    font-size: 80px;
+    font-size: 70px;
   }
 }
 
-section.cta .overlay {
+section .overlay,
+header .overlay {
   position: absolute;
   top: 0;
   left: 0;
