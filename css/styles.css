@@ -201,7 +201,7 @@ header.masthead .device-container .screen img {
   }
   header.masthead .header-content {
     margin-bottom: 0;
-    text-align: left;
+    text-align: center;
   }
   header.masthead .header-content h1 {
     font-size: 42px;
@@ -215,29 +215,35 @@ header.masthead .device-container .screen img {
 section.download {
   position: relative;
   padding: 150px 0;
+  background: url('../img/download.jpg') center center no-repeat;
+  background-size: cover;
 }
 
 section.download h2 {
   font-size: 50px;
   margin-top: 0;
-  color: #fff;
+  color: #ffffff;
 }
 
-section.cta .badges .badge-link {
+section.download p {
+  font-size: 22px;
+}
+
+section.download .badges .badge-link {
   display: block;
   margin-bottom: 25px;
 }
 
-section.cta .badges .badge-link:last-child {
+section.download .badges .badge-link:last-child {
   margin-bottom: 0;
 }
 
-section.cta .badges .badge-link img {
+section.download .badges .badge-link img {
   height: 60px;
 }
 
 @media (min-width: 768px) {
-  section.cta .badges .badge-link {
+  section.download .badges .badge-link {
     display: inline-block;
     margin-bottom: 0;
   }
@@ -246,9 +252,9 @@ section.cta .badges .badge-link img {
 @media (min-width: 768px) {
   section.download h2 {
     font-size: 70px;
+    color: #ffffff;
   }
 }
-
 section.features .section-heading {
   margin-bottom: 60px;
 }
@@ -421,18 +427,19 @@ footer ul li a.active {
 }
 
 .btn-outline {
-  color: white;
-  border: 1px solid;
-  border-color: white;
+  color: #fff;
+  border: 1px solid #65a4ca;
+  background: #65a4ca;
+  border-radius: 10px !important;
 }
 
 .btn-outline:hover,
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-  color: white;
-  border-color: #fff;
-  background-color: #fff;
+  color: #fff;
+  border-color: #65a4cab8;
+  background-color: #65a4cab8;
 }
 
 .btn {
