@@ -386,16 +386,50 @@ section.contact ul.list-social li.social-google-plus a:hover {
 }
 
 footer {
-  padding: 25px 0;
+  padding: 15px 0;
   text-align: center;
-  color: rgba(255, 255, 255, 0.3);
-  background-color: #222222;
+  background-color: #000;
 }
 
 footer p {
-  font-size: 12px;
+  font-size: 13px;
   letter-spacing: 1px;
   margin: 0;
+  line-height: 4;
+}
+
+footer a {
+  text-decoration: none !important;
+  color: #ffffff;
+}
+
+footer i {
+  padding: 10px 10px;
+  font-size: 27px;
+  color: #ffffff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+  margin: 0 5px;
+}
+
+footer .facebook {
+  background-color: #3b5998;
+  padding: 11px 16px;
+}
+
+footer .instagram {
+  background-color: #e1306c;
+}
+
+footer .facebook:hover {
+  color: #3b5998;
+  background-color: #ffffff;
+}
+
+footer .instagram:hover {
+  color: #e1306c;
+  background-color: #ffffff;
 }
 
 footer ul {
