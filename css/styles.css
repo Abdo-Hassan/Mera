@@ -63,11 +63,6 @@ section h2 {
   -webkit-transition: all 0.35s;
   transition: all 0.35s;
   font-weight: 200;
-  letter-spacing: 1px;
-}
-
-#mainNav img {
-  width: 80px;
 }
 
 #mainNav .navbar-brand {
@@ -129,7 +124,7 @@ section h2 {
   #mainNav .navbar-nav > li > a,
   #mainNav .navbar-nav > li > a:focus {
     color: #fff;
-    font-size: 20px;
+    font-size: 22px;
   }
   #mainNav .navbar-nav > li > a:hover,
   #mainNav .navbar-nav > li > a:focus:hover {
@@ -162,13 +157,7 @@ header.masthead {
   width: 100%;
   padding: 100px 10px;
   color: #000;
-  /* background-color: #639ec8; */
-  /* background: rgb(63, 107, 138);
-  background: linear-gradient(
-    0deg,
-    rgba(63, 107, 138, 1) 17%,
-    rgba(99, 158, 200, 1) 75%
-  ); */
+
   background: url('../img/homebg.jpeg') center center no-repeat;
   background-size: cover;
 }
@@ -186,6 +175,7 @@ header.masthead .header-content h1 {
 
 header.masthead .header-content .mera {
   color: #63a2cb;
+  font-weight: bold;
 }
 
 header.masthead .device-container {
@@ -196,6 +186,11 @@ header.masthead .device-container {
 
 header.masthead .device-container .screen img {
   border-radius: 3px;
+}
+
+header.masthead .header-content .download-title {
+  position: relative;
+  bottom: 3px;
 }
 
 @media (min-width: 992px) {
@@ -213,6 +208,12 @@ header.masthead .device-container .screen img {
     font-size: 42px;
     color: #ffffff;
   }
+
+  header.masthead .header-content .download-title {
+    position: relative;
+    bottom: 3px;
+  }
+
   header.masthead .device-container {
     max-width: 325px;
   }
@@ -344,7 +345,7 @@ header .overlay {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #000000a6;
 }
 
 section.contact {
@@ -478,7 +479,7 @@ footer ul li a.active {
   color: #fff;
   border: 1px solid #65a4ca;
   background: #65a4ca;
-  border-radius: 10px !important;
+  border-radius: 50px !important;
   -webkit-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
 }
@@ -494,7 +495,6 @@ footer ul li a.active {
 
 .btn {
   border-radius: 300px;
-  letter-spacing: 1px;
   text-transform: uppercase;
   outline: none !important;
 }
