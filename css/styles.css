@@ -124,7 +124,7 @@ section h2 {
   #mainNav .navbar-nav > li > a,
   #mainNav .navbar-nav > li > a:focus {
     color: #fff;
-    font-size: 22px;
+    font-size: 20px;
   }
   #mainNav .navbar-nav > li > a:hover,
   #mainNav .navbar-nav > li > a:focus:hover {
@@ -236,6 +236,13 @@ section.download p {
   font-size: 22px;
 }
 
+section.download .badges {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-evenly;
+}
+
 section.download .badges .badge-link {
   display: block;
   margin-bottom: 25px;
@@ -256,11 +263,9 @@ section.download .badges .badge-link img {
   }
 }
 
-@media (min-width: 768px) {
-  section.download h2 {
-    font-size: 70px;
-    color: #ffffff;
-  }
+section.download h2 {
+  font-size: 70px;
+  color: #ffffff;
 }
 section.features .section-heading {
   margin-bottom: 60px;
@@ -311,33 +316,6 @@ section.features .feature-item img {
   margin-bottom: 15px;
 }
 
-section.cta {
-  position: relative;
-  padding: 200px 0;
-  background-image: url('../img/download.jpg');
-  background-position: center;
-  background-size: cover;
-}
-
-section.cta .cta-content {
-  position: relative;
-  z-index: 1;
-}
-
-section.cta .cta-content h2 {
-  font-size: 50px;
-  max-width: 450px;
-  margin-top: 0;
-  margin-bottom: 25px;
-  color: white;
-}
-
-@media (min-width: 768px) {
-  section.cta .cta-content h2 {
-    font-size: 70px;
-  }
-}
-
 section .overlay,
 header .overlay {
   position: absolute;
@@ -346,57 +324,6 @@ header .overlay {
   width: 100%;
   height: 100%;
   background-color: #000000a6;
-}
-
-section.contact {
-  text-align: center;
-}
-
-section.contact h2 {
-  margin-top: 0;
-  margin-bottom: 25px;
-}
-
-section.contact h2 i {
-  color: #dd4b39;
-}
-
-section.contact ul.list-social {
-  margin-bottom: 0;
-}
-
-section.contact ul.list-social li a {
-  font-size: 40px;
-  line-height: 80px;
-  display: block;
-  width: 80px;
-  height: 80px;
-  color: white;
-  border-radius: 100%;
-}
-
-section.contact ul.list-social li.social-twitter a {
-  background-color: #1da1f2;
-}
-
-section.contact ul.list-social li.social-twitter a:hover {
-  background-color: #0d95e8;
-}
-
-section.contact ul.list-social li.social-facebook a {
-  background-color: #3b5998;
-}
-
-section.contact ul.list-social li.social-facebook a:hover {
-  background-color: #344e86;
-}
-
-section.contact ul.list-social li.social-google-plus a {
-  background-color: #dd4b39;
-}
-
-section.contact ul.list-social li.social-google-plus a:hover {
-  background-color: #d73925;
 }
 
 footer {
@@ -429,7 +356,7 @@ footer i {
 
 footer .facebook {
   background-color: #3b5998;
-  padding: 11px 16px;
+  padding: 10px 16px;
 }
 
 footer .instagram {
@@ -460,14 +387,6 @@ footer ul li a:focus,
 footer ul li a:active,
 footer ul li a.active {
   text-decoration: none;
-}
-
-.bg-primary {
-  background: #64a2c7 !important;
-}
-
-.text-primary {
-  color: #64a2c7;
 }
 
 .no-gutter > [class*='col-'] {
@@ -503,3 +422,131 @@ footer ul li a.active {
   font-size: 22px;
   padding: 15px 45px;
 }
+
+/* responsive */
+/* max-width: 500px */
+@media screen and (max-width: 500px) {
+  #mainNav {
+    padding: 3px 6px;
+  }
+
+  #mainNav .navbar-brand img {
+    width: 60px;
+  }
+
+  #mainNav .navbar-nav > li > a.active,
+  #mainNav .navbar-nav > li > a,
+  #mainNav .navbar-nav > li > a:focus {
+    padding: 7px 10px;
+  }
+
+  header.masthead .header-content h1 {
+    font-size: 22px;
+    line-height: 1.4;
+    margin-top: 30px;
+  }
+
+  #mainNav .navbar-toggler {
+    font-size: 14px;
+  }
+
+  #mainNav .navbar-nav > li > a {
+    font-size: 16px;
+  }
+
+  .btn-xl {
+    font-size: 18px;
+    padding: 12px 28px;
+  }
+
+  section {
+    padding: 50px 0;
+  }
+
+  section.features .section-heading h2 {
+    font-size: 23px;
+  }
+
+  section.features .section-heading p {
+    font-size: 17px;
+  }
+  section.features .device-container {
+    margin-bottom: 70px;
+  }
+  section.features .section-heading {
+    margin-bottom: 40px;
+  }
+
+  section.features .feature-item h3 {
+    font-size: 23px;
+  }
+
+  section.features .feature-item .feature-description {
+    font-size: 16px;
+  }
+
+  section.download {
+    padding: 80px 0;
+  }
+
+  section.download h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  section.download p {
+    font-size: 17px;
+    margin-bottom: 30px;
+  }
+
+  section.download .badges .badge-link img {
+    height: 40px;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+
+  footer i {
+    font-size: 22px !important;
+  }
+
+  footer .instagram {
+    padding: 10px 11px;
+  }
+
+  footer .facebook {
+    padding: 9px 14px;
+  }
+}
+/* (min-width: 500px)  and (max-width: 960px)*/
+@media screen and (min-width: 500px) and (max-width: 960px) {
+  #mainNav .navbar-toggler {
+    font-size: 15px;
+  }
+
+  header.masthead .header-content h1 {
+    margin-top: 40px;
+  }
+
+  section h2 {
+    font-size: 35px;
+  }
+
+  section.download h2 {
+    font-size: 40px;
+  }
+
+  section.download p {
+    font-size: 20px;
+  }
+
+  footer .facebook {
+    padding: 8px 14px;
+  }
+
+  footer .instagram {
+    padding: 8px 10px;
+  }
+}
+/* responsive */
