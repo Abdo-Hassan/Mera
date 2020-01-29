@@ -5,9 +5,7 @@ body {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: 'Tajawal', sans-serif;
 }
 
 a {
@@ -85,6 +83,16 @@ section h2 {
   border-color: #fff;
 }
 
+.navbar-nav {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 10px;
+}
+
 #mainNav .navbar-nav > li > a {
   font-size: 19px;
   text-transform: uppercase;
@@ -109,7 +117,7 @@ section h2 {
   color: #64a2c7;
 }
 
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   #mainNav {
     border-color: transparent;
     background-color: transparent;
@@ -188,12 +196,12 @@ header.masthead .device-container .screen img {
   border-radius: 3px;
 }
 
-header.masthead .header-content .download-title {
+/* header.masthead .header-content .download-title {
   position: relative;
   bottom: 3px;
-}
+} */
 
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   header.masthead {
     height: 100vh;
     min-height: 775px;
@@ -256,7 +264,7 @@ section.download .badges .badge-link img {
   height: 60px;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   section.download .badges .badge-link {
     display: inline-block;
     margin-bottom: 0;
@@ -291,7 +299,7 @@ section.features .device-container {
   margin-bottom: 100px;
 }
 
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   section.features .device-container {
     margin-bottom: 0;
   }
@@ -523,6 +531,12 @@ footer ul li a.active {
 @media screen and (min-width: 500px) and (max-width: 960px) {
   #mainNav .navbar-toggler {
     font-size: 15px;
+  }
+
+  #mainNav .navbar-nav > li > a.active,
+  #mainNav .navbar-nav > li > a,
+  #mainNav .navbar-nav > li > a:focus {
+    padding: 7px 10px;
   }
 
   header.masthead .header-content h1 {
